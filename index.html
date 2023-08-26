@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Righteous&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Pesonal Portfolio Html Css Riskicode</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,18 +27,19 @@
         <header class="header">
             <a href="#" class="logo">Riskicode</a>
             <nav class="navbar">
-                <a href="#" class="active">Home</a>
+                <a href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
                 <a href="#">Portfolio</a>
-                <a href="#">Contact</a>
+                <a href="#">Contact Us</a>
             </nav>
+            <a href="#" class="btn-int">Curiculum Vitae</a>
         </header>
     </div>
     <!-- Akhir navbar -->
     <!-- Section Pertama -->
     <section class="home">
-        <div class="home-content">
+        <div class="home-content" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
             <h1>Hi, I'm Riski Lubis</h1>
             <h3>Frontend Developer</h3>
             <p>A frontend developer is a digital artist who creates visual magic on the web. With unlimited creativity,
@@ -50,9 +52,18 @@
                 <a href="#">Let's Talk</a>
             </div>
         </div>
+        <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+            <img src="img/Headerimg1.png" alt="Headerimg1" class="gambar-kanan">
+        </div>
     </section>
     <!-- Section Pertama Akhir -->
 
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

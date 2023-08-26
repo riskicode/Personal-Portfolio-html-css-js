@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #081b29;
+    background: #000000;
     color: #ededed;
 }
 
@@ -25,15 +25,16 @@ div .header {
 
 div .logo {
     font-size: 25px;
-    color: #ededed;
+    color: #9AF226;
     text-decoration: none;
     font-weight: 400 36px;
     transition: .3s;
     font-family: 'Righteous', cursive;
+    transition: transform .4s;
 }
 
 div .logo:hover {
-    color: #00abf0;
+    transform: scale(1.2);
 }
 
 div .navbar a {
@@ -47,7 +48,23 @@ div .navbar a {
 
 div .navbar a:hover,
 div .navbar a.active {
-    color: #00abf0;
+    color: #9AF226;
+}
+
+.btn-int {
+    background-color: #9AF226;
+    color: #ffff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    transition: transform .4s;
+}
+
+.btn-int:hover {
+    transform: scale(1.2);
 }
 
 .home {
@@ -55,6 +72,7 @@ div .navbar a.active {
     display: flex;
     align-items: center;
     padding: 0 10%;
+    margin-top: 20px;
 }
 
 .home-content {
@@ -70,7 +88,7 @@ div .navbar a.active {
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: #9AF226;
 }
 
 .home-content p {
@@ -92,34 +110,36 @@ div .navbar a.active {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #000000;
+    border: 2px solid #ffff;
     border-radius: 8px;
     font-size: 19px;
     text-decoration: none;
-    color: #081b29;
+    color: #ffff;
     font-weight: 600;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    background: transparent;
+    color: #9AF226;
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: #ffff;
 }
 
 .btn-box a:nth-child(2) {
     background: transparent;
-    color: #00abf0;
+    color: #9AF226;
 }
 
 .btn-box a:nth-child(2):hover {
-    color: #081b29;
+    color: #ffff;
 }
 
 .btn-box a:nth-child(2)::before {
-    background: #00abf0;
+    background: #9AF226;
 }
 
 .btn-box a::before {
@@ -129,11 +149,21 @@ div .navbar a.active {
     left: 0;
     width: 0;
     height: 100%;
-    background: #081b29;
+    background: #9AF226;
     z-index: -1;
     transition: .5s;
 }
 
 .btn-box a:hover::before {
     width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.gambar-kanan {
+    margin-left: 30px;
+    float: left;
 }
