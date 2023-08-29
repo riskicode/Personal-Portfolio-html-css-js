@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', sans-serif, 'Righteous', cursive;
 }
 
 body {
@@ -161,33 +160,11 @@ div .navbar a.active {
     width: 100%;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-}
-
-.gambar-kanan {
+.imgheader {
     margin-left: 100px;
     float: left;
 }
 
-/* Some color Variable */
-:root {
-    --main-color: #8358ff;
-    --body-color: #0d112e;
-    --container-color: #141740;
-    --text-color: #ffff;
-}
-
-img {
+.imgheader {
     width: 100%;
-}
-
-a{
-    text-decoration: none;
-}
-body{
-    color: var(--text-color);
-    background: var(--body-color);
-    
 }
